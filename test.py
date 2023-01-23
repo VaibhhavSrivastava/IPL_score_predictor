@@ -1,0 +1,8 @@
+plt.figure(figsize=(9, 5))
+plt.scatter(test_df_short['ball_no'] ,test_df_short['totalScore'],color = 'blue', marker = '+')
+plt.scatter(test_df_short['ball_no'] ,y_pred_final ,color = 'red', marker = '+')
+plt.rc('font', size=10)
+plt.ylabel ('Total Score till that Over')
+plt.xlabel ('Ball no(Overs)')
+plt.legend(['target','Prediction'],loc='lower right')
+plt.title("Ridge Regression: Predicition on test data (Total Score Vs Overs(Ball no))")
